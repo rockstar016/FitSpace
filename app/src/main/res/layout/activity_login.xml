@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        </android.support.v4.view.ViewPager>
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/login_indicator"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="65dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/main_image"
+        android:layout_alignStart="@+id/main_image"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login_bt_login"
+            android:background="@color/buttonColor"
+            android:textColor="@android:color/white"
+            style="@style/MyButtonEnabled"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="sign up"
+            android:id="@+id/login_bt_signup"
+            android:background="@android:color/white"
+            android:textColor="@color/buttonColor"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="fit space"
+            android:id="@+id/textView"
+            android:textAllCaps="true"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</RelativeLayout>

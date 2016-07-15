@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="termsandpolicy_htmltext">By signing you agree to our <strong>Terms</strong> &amp; <strong>Privacy</strong> <strong>Policy</strong></string>
+    <string name="title_activity_signup_step">SignupStepActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_simple">SimpleActivity</string>
+
+</resources>
