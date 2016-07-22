@@ -88,7 +88,10 @@ public class LoginStepActivity extends AppCompatActivity implements View.OnClick
     }
     private void gotoMainActivity(){
         if(m_txt_pwd.getText().length() != 0 && m_txt_email.getText().length() != 0){
-            Toast.makeText(LoginStepActivity.this, "main", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(LoginStepActivity.this, GetStartedActivity.class);
+            startActivity(i);
+            finish();
+
         }
         else
         {

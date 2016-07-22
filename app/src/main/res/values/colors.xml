@@ -6,4 +6,6 @@
     <color name="textColor">#ffffff</color>
     <color name="buttonColor">#ff6940</color>
     <color name="disableColor">#dedcdc</color>
+    <color name="blackColor">#555555</color>
+    <color name="greenColor">#87ff97</color>
 </resources>

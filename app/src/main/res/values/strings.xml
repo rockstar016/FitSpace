@@ -9,5 +9,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_simple">SimpleActivity</string>
+    <string name="title_activity_get_started">GetStartedActivity</string>
+    <string name="title_activity_get_started_content">GetStartedContentActivity</string>
 
 </resources>

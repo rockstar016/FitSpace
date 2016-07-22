@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rock.andrew.fit.fragments.Signup_uploadpicture">
+    tools:context="com.rock.andrew.fit.fragments.Signup_Step_upload_photo">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -11,15 +11,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="hi, maria"
-            android:id="@+id/textView4"
+            android:id="@+id/txt_upload_headertext"
             android:layout_marginTop="100dp"
-            style="@style/HeaderLabel" />
+            style="@style/HeaderLabel"
+            android:textColor="@color/blackColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Change your email"
+            android:text="Nice photo"
             android:id="@+id/textView5"
             style="@style/DetailLabel" />
         <TextView
@@ -28,7 +29,8 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="If you're happy with it, press Done"
             style="@style/DetailLabel"
-            android:layout_marginTop="0dp" />
+            android:layout_marginTop="0dp"
+            android:textColor="@color/blackColor" />
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,23 +42,26 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="visible">
+                android:visibility="gone"
+                android:id="@+id/layout_uploadphoto_skip">
 
                 <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:id="@+id/button8"
-                    android:backgroundTint="@color/buttonColor"
+                    android:id="@+id/circle_uploadphoto_add"
+                    app:backgroundTint="@color/buttonColor"
                     android:layout_gravity="center_horizontal|top"
                     android:layout_marginTop="50dp"
                     android:src="@drawable/ic_add_black_24dp"
-                    android:cropToPadding="false" />
+                    android:cropToPadding="false"
+                    />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="skip"
-                    android:id="@+id/button9"
+                    android:id="@+id/button_uploadphoto_skip"
                     android:layout_gravity="center_horizontal"
                     style="@style/LinkButtonStyle"
                     android:layout_marginTop="10dp" />
@@ -65,14 +70,21 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:id="@+id/layout_uploadphoto_done"
+                android:visibility="visible">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
                     android:layout_gravity="center_horizontal|top"
                     android:layout_marginTop="20dp"
-                    android:cropToPadding="false" />
+                    android:cropToPadding="false"
+                    android:id="@+id/image_uploadphoto_face"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    android:src="@drawable/img_f5"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -83,13 +95,15 @@
                     android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="textEnd"
+                    android:id="@+id/button_uploadphoto_changephoto"
+                    android:layout_marginBottom="10dp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="done"
-                    android:id="@+id/button10"
+                    android:id="@+id/button_uploadphoto_done"
                     android:layout_gravity="center_horizontal"
                     style="@style/MyButtonEnabled"
                     android:layout_marginTop="10dp" />

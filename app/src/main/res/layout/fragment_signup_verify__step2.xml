@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.rock.andrew.fit.fragments.Signup_Step_verify_step2">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, maria"
+            android:layout_marginTop="100dp"
+            style="@style/HeaderLabel"
+            android:id="@+id/lbl_signup_hi"
+            android:textColor="@color/blackColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="We need to verify your email address"
+            android:id="@+id/textView5"
+            style="@style/DetailLabel" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend the message"
+                android:id="@+id/button_signup_resendmessage"
+                android:textAllCaps="false"
+                style="@style/LinkButtonStyle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:id="@+id/textView6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your email"
+                android:id="@+id/button_signup_chanagemail"
+                style="@style/LinkButtonStyle"
+                android:textAllCaps="false"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Please enter code we sent to your email"
+            android:id="@+id/textView7"
+            style="@style/DetailLabel"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blackColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="(zeus.rock0115@gmail.com)"
+            android:id="@+id/txt_signup_emailaddress"
+            android:layout_gravity="center_horizontal" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/disableColor"
+            android:layout_margin="10dp">
+
+        </View>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:src="@drawable/ic_vpn_key_black_24dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_signup_code"
+                android:hint="Type Code" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/disableColor"
+            android:layout_margin="10dp">
+
+        </View>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/layout_next">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="next"
+                    android:id="@+id/button_signup_code_next"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/MyButtonEnabled"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>

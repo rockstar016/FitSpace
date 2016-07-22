@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rock.andrew.fit.fragments.Main_Task">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@color/disableColor"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Started:"
+            android:id="@+id/textView12"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="33%"
+            android:id="@+id/txt_tasks_getstart"
+            android:textSize="20sp" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/pb_current_prog"
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            app:rcBackgroundPadding="5dp"
+            app:rcRadius="0dp"
+            app:rcProgressColor="@color/greenColor"
+            app:rcMax="100"
+            app:rcBackgroundColor="#aaa"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_goto_getstart"
+            android:src="@drawable/ic_chevron_right_black_24dp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasks_list_view"
+        android:layout_gravity="center_horizontal"
+        android:choiceMode="singleChoice" />
+</LinearLayout>

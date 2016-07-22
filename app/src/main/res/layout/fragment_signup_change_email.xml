@@ -14,9 +14,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="hi, maria"
-            android:id="@+id/textView4"
+            android:id="@+id/txt_signup_changemail_header"
             android:layout_marginTop="100dp"
-            style="@style/HeaderLabel" />
+            style="@style/HeaderLabel"
+            android:textColor="@color/blackColor" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4" />
+                android:id="@+id/txt_signup_changemail_address" />
         </LinearLayout>
 
         <View
@@ -79,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="next"
-                android:id="@+id/button7"
+                android:id="@+id/bt_signup_changemal_next"
                 android:layout_gravity="center_horizontal"
                 style="@style/MyButtonEnabled"
                 android:layout_marginLeft="20dp"

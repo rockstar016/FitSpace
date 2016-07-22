@@ -28,8 +28,9 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
-                android:layout_weight="1" />
+                android:id="@+id/txt_signup_firstname"
+                android:layout_weight="1"
+                android:hint="Firstname" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,8 +50,9 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/editText2"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:id="@+id/txt_signup_email"
+                android:hint="Email" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,19 +73,20 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText3"
-                android:layout_weight="1" />
+                android:id="@+id/txt_signup_lock"
+                android:layout_weight="1"
+                android:hint="Password(at least 6 characters)" />
         </LinearLayout>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="next"
-            android:id="@+id/button"
+            android:id="@+id/signup_bt_next"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:enabled="false"
-            style="@style/MyButtonEnabled" />
+            android:background="@drawable/button_disable_color" />
 
         <TextView
             android:layout_width="match_parent"

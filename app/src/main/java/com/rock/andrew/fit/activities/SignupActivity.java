@@ -9,8 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.rock.andrew.fit.R;
-import com.rock.andrew.fit.fragments.Login_ResetPassword_step2;
+import com.rock.andrew.fit.fragments.Signup_Step_change_email;
 import com.rock.andrew.fit.fragments.Signup_Step_first;
+import com.rock.andrew.fit.fragments.Signup_Step_upload_photo;
+import com.rock.andrew.fit.fragments.Signup_Step_verify_step1;
+import com.rock.andrew.fit.fragments.Signup_Step_verify_step2;
+import com.rock.andrew.fit.models.CommonFragemtModels;
 
 public class SignupActivity extends AppCompatActivity {
     Button m_tool_back,m_tool_next;
@@ -22,15 +26,40 @@ public class SignupActivity extends AppCompatActivity {
         setupToolbar();
         FragmentSetupBasedOnStep(0);
     }
-
     public void FragmentSetupBasedOnStep(int current_step) {
         if(current_step == 0)
         {
             Fragment frag = Signup_Step_first.newInstance();
             LoadFragment(frag);
         }
-    }
+        else if(current_step == 1){
 
+            Fragment frag = Signup_Step_verify_step1.newInstance();
+            LoadFragment(frag);
+            hideToolbar();
+        }
+        else if(current_step == 2){
+            Fragment frag = Signup_Step_verify_step2.newInstance();
+            LoadFragment(frag);
+            hideToolbar();
+        }
+        else if(current_step == 3){
+            Fragment frag = Signup_Step_change_email.newInstance();
+            LoadFragment(frag);
+            showToolbar("");
+        }
+        else if(current_step == 4){
+            Fragment frag = Signup_Step_upload_photo.newInstance();
+            LoadFragment(frag);
+        }
+    }
+    private void hideToolbar(){
+        m_tool_back.setVisibility(View.GONE);
+    }
+    private void showToolbar(String value){
+        m_tool_back.setText(value);
+        m_tool_back.setVisibility(View.VISIBLE);
+    }
     private void LoadFragment(Fragment frag) {
         while (getSupportFragmentManager().getBackStackEntryCount() > 0)
         {
@@ -57,9 +86,15 @@ public class SignupActivity extends AppCompatActivity {
     }
     private void gotoFirstDisplay()
     {
-        Intent i = new Intent(SignupActivity.this, LoginActivity.class);
-        startActivity(i);
-        finish();
+        Fragment current_frag = getSupportFragmentManager().findFragmentById(R.id.signup_container);
+        if(current_frag instanceof Signup_Step_change_email){
+            FragmentSetupBasedOnStep(CommonFragemtModels.SIGNUP_FRAGMENT_VERIFY1);
+        }
+        else{
+            Intent i = new Intent(SignupActivity.this, LoginActivity.class);
+            startActivity(i);
+            finish();
+        }
     }
     @Override
     public void onBackPressed() {

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.rock.andrew.fit.fragments.SignupVerify_Step1">
+    tools:context="com.rock.andrew.fit.fragments.Signup_Step_verify_step1">
 
 
     <LinearLayout
@@ -14,10 +14,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hi, maria"
-            android:id="@+id/textView4"
+            android:text="Hi, maria"
             android:layout_marginTop="100dp"
-            style="@style/HeaderLabel" />
+            style="@style/HeaderLabel"
+            android:id="@+id/lbl_signup_hi"
+            android:textColor="@color/blackColor" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Resend the message"
-                android:id="@+id/button4"
+                android:id="@+id/button_signup_resendmessage"
                 android:textAllCaps="false"
                 style="@style/LinkButtonStyle"
                 android:layout_marginLeft="0dp"
@@ -58,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Change your email"
-                android:id="@+id/button5"
+                android:id="@+id/button_signup_chanagemail"
                 style="@style/LinkButtonStyle"
                 android:textAllCaps="false"
                 android:paddingRight="0dp"
@@ -74,14 +75,15 @@
             style="@style/DetailLabel"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blackColor" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="(zeus.rock0115@gmail.com)"
-            android:id="@+id/textView8"
+            android:id="@+id/txt_signup_emailaddress"
             android:layout_gravity="center_horizontal" />
         <View
             android:layout_width="match_parent"
@@ -108,7 +110,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4" />
+                android:id="@+id/txt_signup_code"
+                android:hint="Type Code" />
         </LinearLayout>
 
         <View
@@ -128,13 +131,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:background="@color/disableColor">
+                android:background="@color/disableColor"
+                android:id="@+id/layout_skip">
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Skip"
-                    android:id="@+id/button6"
+                    android:id="@+id/button_signup_skip"
                     android:layout_gravity="center"
                     android:textAllCaps="false"
                     style="@style/LinkButtonStyle" />
@@ -148,22 +152,6 @@
                     style="@style/DetailLabel"
                     android:textColor="@color/secondary_text_default_material_light"
                     android:textSize="15sp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="next"
-                    android:id="@+id/button7"
-                    android:layout_gravity="center_horizontal"
-                    style="@style/MyButtonEnabled"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="10dp" />
             </LinearLayout>
         </FrameLayout>
 

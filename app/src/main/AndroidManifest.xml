@@ -17,12 +17,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SignupActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.LoginStepActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ForgotPasswordActivity"
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.GetStartedActivity"
+            android:label="@string/title_activity_get_started"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.GetStartedContentActivity"
+            android:label="@string/title_activity_get_started_content"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

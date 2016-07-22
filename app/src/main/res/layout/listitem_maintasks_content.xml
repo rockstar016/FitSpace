@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical|center|fill_vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_taks_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/txt_taks_timeamount"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="days left"
+            android:id="@+id/txt_taks_dayleft"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_tasks_goto"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:background="@android:color/transparent" />
+</LinearLayout>
